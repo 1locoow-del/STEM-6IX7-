@@ -4,54 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STEM-6IX7 | 67</title>
+
+  <title></title>
 
   <style>
-    body {
+    * {
       margin: 0;
-      min-height: 100vh;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #101820;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    h1 {
-      letter-spacing: 3px;
     }
 
     img {
+      display: block;
       width: 100%;
-      max-height: 70vh;
+      height: 100%;
       object-fit: contain;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    p {
-      color: #ccc;
+      border: none;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>STEM-6IX7</h1>
-    <p> Different mind, one journe, countless memories.</p>
 
-    <img id="picture" alt="Random STEM-6IX7 picture">
-
-    <p>67 乁⁠ʕ⁠ ⁠•̀⁠ ⁠۝ ⁠•́⁠ ⁠ʔ⁠ㄏ</p>
-  </div>
+  <img id="picture" alt="">
 
   <script>
     const images = [
@@ -82,13 +70,12 @@
       "1mpBTFkk8jygZscGYnvabwJi2sXOtMZJ6"
     ];
 
-    const randomIndex = Math.floor(Math.random() * images.length);
-    const selectedImage = images[randomIndex];
+    const randomImage =
+      images[Math.floor(Math.random() * images.length)];
 
     document.getElementById("picture").src =
-      "https://drive.google.com/thumbnail?id=" +
-      selectedImage + "&sz=w1600";
+      `https://drive.google.com/thumbnail?id=${randomImage}&sz=w2000`;
   </script>
+
 </body>
-  </html>
-  
+</html>
