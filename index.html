@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM-6IX7 | Random Picture</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #101820;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      letter-spacing: 3px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>STEM-6IX7</h1>
+    <p>A random picture just for you.</p>
+
+    <img id="picture" alt="Random STEM-6IX7 picture">
+
+    <p>Every scan brings something different.</p>
+  </div>
+
+  <script>
+    const images = [
+      "13CtWnuDAi7Iul0U_4ZjZ8fZO02UDP_d7",
+      "16GIlE9dHgGxN8Rrs6tHPXXtmpXVxbiVp",
+      "1yM1aowTpJFwfZ6m0Ni36c6U0MHR5Ol17",
+      "1-_U-1vljw7irDPD8mocnCERtfssFAWgq",
+      "1E-AMf46vUz5Ti4htfKfxEdSUMZ7ITlrs",
+      "1lzzwNCtnL9kOnWzChhHJnankExUKJK12",
+      "1YdnljI7pd-6VoeuXdgCGfvammS2WRsVF",
+      "1NtHdxo688MTnma7IdGZhdMXSNu8ABG8t",
+      "1oiXAjJhbYNj6W2oxEYIGUG5kHXWEd71U",
+      "13tWALAIsZsJOu_9hgzX-b10lE1__Xovo",
+      "1CyAbicX13pvQSLQ59zy7HyQ2C0zAxm7k",
+      "1mlq0b4DGbzWZ2BOW9BUmQIIMmMjK0tTh",
+      "1jv5Kn_Unv0xPk2-zbtZ15UJhB_BMYxnw",
+      "1athkgYqZ32oNdeadAg90z-W5P_rN_l4N",
+      "18aEPgSld1QfzPIDAEUR1Wln-rEli-M8a",
+      "1uHkUUl5lXwjNikQEjfXoGQT8x8E3QU32",
+      "1iUhzQK1BdoeHcf8lEd8el-wdTkO3LqI7",
+      "1yubmDt8LYl7JMPUamQgGa9emgZPJ4-T8",
+      "1-kIUyqYXVOMYsaoFp54RKoPOZKyqSw0a",
+      "1m2Is9FCzlkJCjr78b--SzfbVWdqab_gS",
+      "1hlAWUVUL3Sq5rBI8Nqs1g6p-yVHFbYSx",
+      "17jNWYJ0UzhLNTqQe-wl4oDmF6tUKVdNt",
+      "1BHw7nuW3QVF6XfQMsGmdkqvbQDMMlEZv",
+      "18_cx-T9o-OmC96TNDVBaznNXJdCLVeoO",
+      "1mpBTFkk8jygZscGYnvabwJi2sXOtMZJ6"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+
+    document.getElementById("picture").src =
+      "https://drive.google.com/thumbnail?id=" +
+      selectedImage + "&sz=w1600";
+  </script>
+</body>
+  </html>
+  
